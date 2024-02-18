@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+#turn {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #ccc;
+}
+
+.status {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #428bca;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#restart-btn:hover {
+    background-color: #3071a9;
+}
+#turn {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #428bca;
+    padding-right: 20px;
+}
+
+#turn::before {
+    content: "It's ";
+    color: #333;
+}
+
+#turn::after {
+    content: "'s turn";
+    color: #333;
+}
+.status {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #428bca;
+    padding-right: 20px;
+    padding-left: 20px;
+}
